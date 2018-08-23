@@ -56,10 +56,14 @@
 				        <li><a href="nosotros.html">NOSOTROS</a></li>
 				        <li><a href="blog.html">BLOG</a></li>
 				        <li><a href="contacto.html">CONTACTO</a></li>
-				      </ul> -->
+				      </ul> --> 
 
 				      <?php if ( has_nav_menu( 'header-menu' ) ) { ?>
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => null ) ); ?>
+							<?php wp_nav_menu( array(
+								'theme_location' => 'header-menu',
+								'container' 		=> null,
+								'menu_class'      	=> 'nav navbar-nav'
+							)); ?>
 					  <?php } ?>
 
 

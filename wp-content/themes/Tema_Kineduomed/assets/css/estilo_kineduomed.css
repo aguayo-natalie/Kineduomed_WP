@@ -1,0 +1,396 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: #414141;
+	padding-top: 130px;}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;}
+
+h1, h2 {
+	font-weight: 300;
+	font-size: 24px;}
+
+
+/* Agendar hora */
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: #ff9595;
+	padding: 16px 25px;}
+
+.nav-pills>li.active>a:hover {
+	background-color: #ff8282;}
+
+.nav-pills>li>a {
+    border-radius: 0;}
+
+.calendario {
+	font-size: 16px;
+	padding-right: 0.5em;}
+
+
+/* Logo + info */
+.logotipo {
+	margin: 6% 0;
+	width: 80%}
+
+.info {
+	text-align: right;
+	margin-top: 1em;}
+
+.info h4 {
+	color:#ff9595;
+	margin-bottom: 0;}
+
+.fixed {
+	position: fixed;
+	top:0; z-index: 10;}
+
+.blanco {
+	background-color: white;}
+
+
+/* Menú */
+.navbar-inverse {
+	border-radius: 0;
+	border: none;}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #090909;}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0.5em;
+	text-align: center;}
+
+.dropdown-menu {
+   font-size: 12px}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 25px;}
+
+.dropdown-menu {
+	background-color: #0e0e0e;}
+
+.dropdown-menu>li>a {
+    color: #fff;}
+
+.dropdown-menu>li>a:hover {
+	background-color: #333333;
+	background-image: none;
+	color: white;}
+
+.navbar-nav>li>.dropdown-menu {
+   text-align: center;
+}
+
+
+/* Servicios */
+.servicios_fondo {
+	background-image: url(../images/home_superior.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	height: 350px;
+	margin-top: 1em;
+	position: relative;}
+
+/*.servicios_fondo {
+    background-image: url("../images/home_superior.jpg");
+    height: 300px;
+	margin-top: 140px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;}
+
+.swiper-container {
+      width: 100%;
+      height: 100%;}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;}
+
+.servicios {
+	position: absolute;
+	top: 24em;
+	right: 0;
+	left: 0}
+
+.swiper-button-next.swiper-button-next-02, .swiper-button-prev.swiper-button-prev-02 {
+    background-color: #ff9595;
+    width: 30px;
+    height: 30px;
+    background-size: 15px 15px;}
+
+.servicios p {
+	color: #414141;
+	font-size: 12px;
+	font-weight: 500;
+	padding-top: 1em;
+	text-decoration: none;}
+
+.servicios img {
+	width: 150px;}
+
+a:focus, a:hover {
+    color: #ababab;
+    text-decoration: none;}
+
+
+/* Nosotros Home */
+.imagen_nosotros_home {
+	background-image: url(../images/nosotros_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 75%;
+    height: 425px;}
+
+.nosotros_home {
+	margin-top: 16em;
+	background-color: #f8f8f8;}
+
+.textos {padding: 4em;}
+.espacio {padding-top: 3em;}
+
+
+/* Te Recomendamos - Blog */
+.recomendamos {
+	padding: 4em;}
+
+.titulos {
+	text-align: center;
+	padding-bottom: 1em;}
+
+.linea_center {
+	border-bottom: 3px solid #ff9595;
+	padding: 0.2em;}
+
+.ultimas_entradas {
+	margin-top: 4em;}
+
+.ultimas_entradas h4 {
+	font-size: 16px;
+	font-weight: 600;}
+
+
+/* Mapa */
+.jumbotron {
+	background-image: url(../images/home_mapa.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	margin-bottom: 0;}
+
+.jumbotron_info {
+	color: white;
+	text-align: center;
+	padding: 4em 0;}
+
+.jumbotron_info p {
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 1em;}
+
+.jumbotron_info i {
+	font-size: 30px;}
+
+.jumbotron_info a {
+	color: white;}
+
+
+/* Footer */
+.pie {
+	background-color: #333333;
+	padding: 4em;}
+
+.pie p {
+	color: white;
+	font-weight: 600;}
+
+.pie span {
+	font-weight: 300;
+	color: white;}
+
+.pie i {
+	padding-right: 1em;
+	font-size: 14px;
+	color: #ff9595;}
+
+.footer {
+	background-color: #191919;
+	padding: 1em;}
+
+.footer h6 {
+	text-align: center;
+	color: white;
+	font-weight: 300;}
+
+
+/* Página Servicios */
+.centrar {
+	text-align: center;}
+
+/*.ancla::before {
+  display: block;
+  content: " "
+  margin-top: -130px;
+  height: 130px;
+  visibility: hidden;}*/
+
+.img_servicios {
+	width: 20%;
+	padding-top: 5em;}
+
+.servicios_main h4 {
+	text-align: center;
+	padding-bottom: 1em;}
+
+.servicios_main ul {
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 6em;}
+
+.servicios_main span ul {
+	border-bottom: none;
+	padding-bottom: 0em;}
+
+.servicios_main span p {
+	padding-bottom: 6em;}
+
+
+/* Página Convenios */
+.convenios_main {
+	padding-top: 4em;
+	background-color: #f8f8f8;}
+
+.convenios_main__logos {
+	margin: 3em 0;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);}
+
+.convenios_main__escribenos a {
+	color: #ff9595;}
+
+.convenios_main__escribenos h5 {
+	color: #ff9595;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 3em;}
+
+.convenios_main__textos {
+	padding: 4em;
+	margin-top: 6em;}
+
+.imagen_convenios {
+	background-image: url(../images/convenios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 30%;
+    height: 425px;}
+
+
+/* Página Nosotros */
+.imagen_nosotros {
+	background-image: url(../images/equipo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 30%;
+    height: 425px;}
+
+.nosotros_equipo {
+	padding: 3em 3em 5em 3em;
+	text-align: center;}
+
+.nosotros_equipo img {
+	border-radius: 300px;
+	width: 50%;
+	margin-top: 3em;}
+
+.nosotros_equipo h5 {
+	margin-bottom: 0.2em;
+	color: #ff9595}
+
+.nosotros_equipo__fondo
+	{background-color: #f8f8f8;}
+
+
+/* Página Contacto */
+.contacto_mapa {
+	margin-top: 1em;}
+
+.contacto_formulario {
+	margin-top: 3em;
+	margin-bottom: 5em;}
+
+.contacto_formulario__info {
+	margin-top: 1.5em;}
+
+.contacto_formulario__info h4 {
+	font-weight: 300;
+	margin-bottom: 1em;}
+
+.contacto_formulario__info p {
+	font-weight: 600;}
+
+.contacto_formulario__info span {
+	font-weight: 300;}
+
+.contacto_formulario__info a {
+	color: #414141;}
+
+.contacto_formulario__info i {
+	padding-right: 1em;
+	font-size: 16px;
+	color: #ff9595;}
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+    height: 370px;}
+
+.embed-responsive-16by9 {
+    padding-bottom: 370px;}
+
+.form-group input {
+	margin-bottom: 0.5em;
+	background-color: #80808014;
+    border: none;}
+
+.form-group {
+	margin-top: 2em;}
+
+.form-group button {
+	margin-top: 1em;
+	float: right;}
+
+textarea.form-control {
+	background-color: #80808014;
+	border: none;}
+
+.btn-default {
+	background-color: #ff9595;
+	text-shadow: none;
+	background-image: none;
+	border: none;
+	color: white;
+	width: 25%;}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+	background-color: #ff8282;
+	color: white;}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: white;
+    background-color: #ff8282;
+    border: none;}

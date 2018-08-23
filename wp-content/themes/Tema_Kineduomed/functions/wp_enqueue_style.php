@@ -20,7 +20,7 @@ function dl_enqueue_style() {
 	/* Register Scripts */
 	
 	wp_register_style( 'main_style', get_theme_file_uri( '/assets/css/style.css'), null, $theme_data->get( 'Version' ), 'screen' );
-	wp_register_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', null, null, 'screen' );
+	wp_register_style( 'bootstrap', get_theme_file_uri( '/assets/css/bootstrap.css'), null, null, 'screen' );
 	wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css', null, null, 'screen' );
 	wp_register_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700', null, null, 'screen' );
 	wp_register_style( 'swiper', get_theme_file_uri( '/assets/css/swiper.min.css'), null, null, 'screen' );

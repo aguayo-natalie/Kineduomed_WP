@@ -30,7 +30,7 @@ function dl_enqueue_scripts() {
 	
 	wp_register_script('g_analytics', 'https://www.googletagmanager.com/gtag/js?id=UA-124174811-1', null, null, false);
 	wp_register_script('analytics', get_theme_file_uri('/assets/js/analytics.js'), null, null, false);
-	wp_register_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', null, null, true);
+	wp_register_script('bootstrap', get_theme_file_uri('/assets/js/lib/bootstrap.js'), null, null, true);
 	wp_register_script('swiper', get_theme_file_uri('/assets/js/lib/swiper.jquery.min.js'), null, null, true);
 	wp_register_script('kineduomed', get_theme_file_uri('/assets/js/script_kineduomed.js'), null, null, true);
 

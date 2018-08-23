@@ -24,7 +24,7 @@
 			<div class="row">
 				<nav class="navbar navbar-inverse">
 				  <div class="container-fluid">
-				    <!-- Brand and toggle get grouped for better mobile display -->
+				    
 				    <div class="navbar-header">
 				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
@@ -34,9 +34,9 @@
 				      </button>
 				    </div>
 
-				    <!-- Collect the nav links, forms, and other content for toggling -->
+				   
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
+				      <!-- <ul class="nav navbar-nav">
 				        <li><a href="index.html">HOME</a></li>
 				        <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
@@ -56,7 +56,12 @@
 				        <li><a href="nosotros.html">NOSOTROS</a></li>
 				        <li><a href="blog.html">BLOG</a></li>
 				        <li><a href="contacto.html">CONTACTO</a></li>
-				      </ul>
+				      </ul> -->
+
+				      <?php if ( has_nav_menu( 'header-menu' ) ) { ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => null ) ); ?>
+					  <?php } ?>
+
 
 				      <div class="container">
 				          <ul class="nav nav-pills navbar-right">

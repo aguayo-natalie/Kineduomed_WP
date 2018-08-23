@@ -6,8 +6,8 @@
 	function convenios_post_type() {
 
 		$labels = array(
-			'name'                  => _x( 'convenios', 'Post Type General Name', 'text_domain' ),
-			'singular_name'         => _x( 'convenio', 'Post Type Singular Name', 'text_domain' ),
+			'name'                  => _x( 'Convenios', 'Post Type General Name', 'text_domain' ),
+			'singular_name'         => _x( 'Convenio', 'Post Type Singular Name', 'text_domain' ),
 			'menu_name'             => __( 'Convenios', 'text_domain' ),
 			'name_admin_bar'        => __( 'Convenios', 'text_domain' ),
 			'archives'              => __( 'Item Archives', 'text_domain' ),

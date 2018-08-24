@@ -18,18 +18,19 @@
 					<p><?php the_content() ?></p>
 				</div>
 			</div>
+			<div class="float-right">
+				<?php get_sidebar(); ?>
+			</div>
 		</div>
-
-		<div class="espacio_doble"></div>
 	
-		
-
+		<div class="espacio_doble"></div>
 
 	<?php } ?>
+
 <?php } else { ?>
 	<!-- Content -->
 <?php } wp_reset_query(); ?>
 
-
 <?php get_sidebar() ?>
+
 <?php get_footer() ?>

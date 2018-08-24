@@ -17,18 +17,20 @@
 			<p><a href="mailto:kineduomed@gmail.com"><i class="fas fa-envelope"></i><span>contacto@kineduomed.cl</span></a></p>
 		</div>
 
-		<div class="form-group col-md-7">
-  			<label for="name">Nombre</label>
+		<!-- <div class="form-group col-md-7">
+			<label for="name">Nombre</label>
 			<input id="name" name="name" type="text" class="form-control">
 
-  			<label for="email">Correo</label>
-  			<input id="email" name="email" type="text" class="form-control">
+			<label for="email">Correo</label>
+			<input id="email" name="email" type="text" class="form-control">
 
- 			<label for="message">Mensaje</label>
+			<label for="message">Mensaje</label>
 			<textarea class="form-control" id="message" name="message" rows="5"></textarea>
 
-  			<button type="submit" class="btn btn-default">ENVIAR</button>
-		</div>
+			<button type="submit" class="btn btn-default">ENVIAR</button>
+		</div> -->
+
+		<?= do_shortcode('[contact-form-7 id="186" title="form_bootstrap"]') ?>
 
 	</section>
 

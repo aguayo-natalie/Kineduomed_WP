@@ -6,31 +6,31 @@
 			<div class="swiper-container swiper-container-02">
 	            <div class="swiper-wrapper swiper-wrapper-02">
 	                <div class="swiper-slide">
-	                    <a href="servicios.html#servicio_musculo">
+	                    <a href="<?php bloginfo('url') ?>">
 	                        <img src="<?php bloginfo('template_url') ?>/assets/images/iconos_musculo.svg" alt="KINESIOLOGÍA MUSCULO-ESQUELÉTICA">
 	                        <p>KINESIOLOGÍA<br>MUSCULO-ESQUELÉTICA</p>
 	                    </a>
 	                </div>
 	                <div class="swiper-slide">
-	                    <a href="servicios.html#servicio_respiratoria">
+	                    <a href="<?php bloginfo('url') ?>">
 	                        <img src="<?php bloginfo('template_url') ?>/assets/images/iconos_respiratoria.svg" alt="KINESIOLOGÍA RESPIRATORIA">
 	                        <p>KINESIOLOGÍA<br>RESPIRATORIA</p>
 	                    </a>
 	                </div>
 	                <div class="swiper-slide">
-	                    <a href="servicios.html#servicio_reductivo">
+	                    <a href="<?php bloginfo('url') ?>">
 	                        <img src="<?php bloginfo('template_url') ?>/assets/images/iconos_reductivo.svg" alt="MASAJES REDUCTIVOS Y YESOTERAPIA">
 	                        <p>MASAJES REDUCTIVOS<br>Y YESOTERAPIA</p>
 	                    </a>
 	                </div>
 	                <div class="swiper-slide">
-	                    <a href="servicios.html#servicio_empresas">
+	                    <a href="<?php bloginfo('url') ?>">
 	                        <img src="<?php bloginfo('template_url') ?>/assets/images/iconos_empresas.svg" alt="SALUD Y PREVENCIÓN EN EMPRESAS">
 	                        <p>SALUD Y PREVENCIÓN<br>EN EMPRESAS</p>
 	                    </a>
 	                </div>
 	                <div class="swiper-slide">
-	                    <a href="servicios.html#servicio_domicilio">
+	                    <a href="<?php bloginfo('url') ?>">
 	                        <img src="<?php bloginfo('template_url') ?>/assets/images/iconos_domicilio.svg" alt="ATENCIÓN KINÉSICA A DOMICILIO">
 	                        <p>ATENCIÓN KINÉSICA<br>A DOMICILIO</p>
 	                    </a>
@@ -100,7 +100,7 @@
 	<section class="mapa">
 		<div class="jumbotron">
 			<div class="jumbotron_info">
-				<a href="contacto.html"><i class="fas fa-map-marker-alt"></i></a>
+				<a href="<?php bloginfo('url') ?>"><i class="fas fa-map-marker-alt"></i></a>
 				<p>Angol 463, piso 9, oficina 904<br>
 				Edificio Millenium, Concepción</p>
 			</div>

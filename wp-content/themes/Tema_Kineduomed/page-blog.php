@@ -1,11 +1,13 @@
 <?php get_header() ?>
 	
 
-
+<div class="ultimas_entradas">
+	
+	
 	<?php
 		$blog = array(
 			'post_type'			=> 'post',
-			'posts_per_page'	=> 2,
+			'posts_per_page'	=> 3,
 			'paged'				=> $paged
 		);
 
@@ -15,15 +17,36 @@
 			$get_blog->the_post();
 		?>
 
+		<div class="row">
+			<div class="container">
+				
+				<div class="col-md-6">
+					<div class="thumbnail">
+				      	<div class="caption">
+				        	<h4><?php the_title() ?></h4>
+				        	<p><?php the_excerpt() ?></p>
+				     	</div>   
+				
+				      	<a href="<?php the_permalink() ?>">
+				      		<?php the_post_thumbnail() ?>
+				      	</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="espacio"></div>
 	
-			<?php the_post_thumbnail() ?>
-			<h3><?php the_title() ?></h3>
-			<div><?php the_content() ?></div>
 
-		<?php } wp_reset_postdata();
+		<?php } wp_reset_postdata();?>
 
-	?>
+	
+</div>
+
 
 	<?php the_pagination( $get_blog ); ?>
 
 <?php get_footer() ?>
+
+
+				

@@ -13,6 +13,9 @@ h1, h2 {
 	font-weight: 300;
 	font-size: 24px;}
 
+.img_blog {float: right; padding-left: 2em;}
+.espacio_doble {padding-top: 6em;}
+
 
 /* Agendar hora */
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus {
@@ -396,3 +399,5 @@ textarea.form-control {
     color: white;
     background-color: #ff8282;
     border: none;}
+
+

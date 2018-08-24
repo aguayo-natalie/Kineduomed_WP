@@ -15,6 +15,8 @@ h1, h2 {
 
 .img_blog {float: right; padding-left: 2em;}
 .espacio_doble {padding-top: 6em;}
+.caption h4 {text-transform: uppercase;}
+.upper {text-transform: uppercase;}
 
 
 /* Agendar hora */
@@ -317,11 +319,13 @@ a:focus, a:hover {
 
 .nosotros_equipo {
 	padding: 3em 3em 5em 3em;
-	text-align: center;}
+	text-align: center;
+	text-transform: uppercase;}
 
 .nosotros_equipo img {
 	border-radius: 300px;
-	width: 50%;
+	width: 60%;
+	height: 60%;
 	margin-top: 3em;}
 
 .nosotros_equipo h5 {

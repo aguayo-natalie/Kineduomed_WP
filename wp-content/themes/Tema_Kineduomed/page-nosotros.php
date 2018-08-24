@@ -19,25 +19,29 @@
 	<section class="nosotros_equipo__fondo">
 		<div class="nosotros_equipo container">
 			<div class="row">
+
+				<?php
+					$equipo = array(
+						'post_type'			=> 'equipo',
+						'posts_per_page'	=> 6
+					);
+
+					$get_equipo = new WP_Query( $equipo );
+
+					while ( $get_equipo->have_posts() ) {
+						$get_equipo->the_post();
+				?>
+
 				<div class="col-md-4">
-		  			<img src="assets/images/isabel_aguayo.jpg" alt="isabel aguayo">
-		  			<h5>ISABEL AGUAYO BURBOA</h5>
-		  			<p>KINESIÓLOGA</p>
+					<?php the_post_thumbnail() ?>
+		  			<h5><?php the_title() ?></h5>
+		  			<p><?php the_field('text') ?></p>
 		  		</div>
 
-		  		<div class="col-md-4">
-		  			<img src="assets/images/javier_castro.jpg" alt="isabel aguayo">
-		  			<h5>JAVIER CASTRO ANDRADE</h5>
-		  			<p>KINESIÓLOGO</p>
-		  		</div>
+		  		<?php } wp_reset_postdata();?>
 
-		  		<div class="col-md-4">
-		  			<img src="assets/images/jennifer_quijada.jpg" alt="isabel aguayo">
-		  			<h5>JENNIFER QUIJADA ROJAS</h5>
-		  			<p>KINESIÓLOGA</p>
-		  		</div>
 	  		</div>
-		</div>
+	  	</div>
 	</section>
 
 <?php get_footer() ?>

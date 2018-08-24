@@ -46,6 +46,11 @@
 
 	<?php the_pagination( $get_blog ); ?>
 
+	<?php if ( is_active_sidebar( 'sidebar-widget' ) ) : ?>
+		<?php dynamic_sidebar( 'sidebar-widget' ); ?>            
+	<?php endif; ?>
+
+
 <?php get_footer() ?>
 
 

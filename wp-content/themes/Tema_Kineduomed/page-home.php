@@ -65,37 +65,36 @@
 		</h2>
 		<div class="ultimas_entradas">
 			<div class="row">
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <a href="#"><img src="<?php bloginfo('template_url') ?>/assets/images/aerocamara.jpg" alt="uso de la aerocamara"></a>
-			      <div class="caption">
-			        <h4>USO CORRECTO DE LA AEROCAMARA</h4>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus saepe vel cumque, molestiae tenetur nesciunt impedit magni doloribus. Cumque, nihil blanditiis maiores asperiores ad sunt quo, voluptatem deleniti cum.</p>
-			      </div>
-			    </div>
-			  </div>
+				
+					<?php
+						$entradas = array(
+							'post_type'			=> 'post',
+							'posts_per_page'	=> 3
 
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <a href="#"><img src="<?php bloginfo('template_url') ?>/assets/images/tape.jpg" alt="uso de la aerocamara"></a>
-			      <div class="caption">
-			        <h4>TAPE, VENDAJE NEUROMUSCULAR</h4>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus saepe vel cumque, molestiae tenetur nesciunt impedit magni doloribus. Cumque, nihil blanditiis maiores asperiores ad sunt quo, voluptatem deleniti cum.</p>
-			      </div>
-			    </div>
-			  </div>
+						);
 
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <a href="#"><img src="<?php bloginfo('template_url') ?>/assets/images/rehabilitacion.jpg" alt="uso de la aerocamara"></a>
-			      <div class="caption">
-			        <h4>REHABILITACIÓN  DEPORTIVA</h4>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus saepe vel cumque, molestiae tenetur nesciunt impedit magni doloribus. Cumque, nihil blanditiis maiores asperiores ad sunt quo, voluptatem deleniti cum.</p>
-			      </div>
-			    </div>
-			  </div>
+						$get_entradas = new WP_Query( $entradas );
+
+						while ( $get_entradas->have_posts() ) {
+							$get_entradas->the_post();
+					?>
+
+					<div class="col-sm-6 col-md-4">
+					    <div class="thumbnail">
+					      	<a href="<?php the_permalink() ?>">
+					      		<?php the_post_thumbnail() ?>
+					      	</a>
+
+					      	<div class="caption">
+					        	<h4><?php the_title() ?></h4>
+					        	<p><?php the_excerpt() ?></p>
+					     	 </div>
+					    </div>
+					</div>
+					<?php } wp_reset_postdata();?>
 			</div>
 		</div>
+		
 	</section>
 
 	<section class="mapa">

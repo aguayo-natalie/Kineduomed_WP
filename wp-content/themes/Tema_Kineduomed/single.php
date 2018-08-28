@@ -12,7 +12,7 @@
 					<h1 class="upper"><strong><?php the_title() ?></strong></h1>
 					<p><time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time></p>
 					<div class="espacio img_blog">
-						<?php the_post_thumbnail() ?>
+						<?php the_post_thumbnail('entradas_s') ?>
 					</div>
 					<div class="espacio"></div>
 					<p><?php the_content() ?></p>

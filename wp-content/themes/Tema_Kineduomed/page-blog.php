@@ -26,7 +26,7 @@
 						</div>
 
 						<a href="<?php the_permalink() ?>">
-							<?php the_post_thumbnail() ?>
+							<?php the_post_thumbnail('entradas_m') ?>
 						</a>
 					</div>
 				</div>

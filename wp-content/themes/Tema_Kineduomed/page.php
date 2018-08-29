@@ -1,4 +1,5 @@
 <?php get_header() ?>
+<div class="espacio_doble"></div>
 	<?php the_post() ?>
 	
 	<?php the_post_thumbnail() ?>

@@ -7,7 +7,7 @@
 		<?php
 			$blog = array(
 				'post_type'			=> 'post',
-				'posts_per_page'	=> 3,
+				'posts_per_page'	=> 4,
 				'paged'				=> $paged
 			);
 
@@ -19,15 +19,14 @@
 
 			<div class="row">
 				<div>
-					<div class="thumbnail">
-						<div class="caption">
+					<div class="thumbnail col-md-12 mbottom">
+						<a class="col-md-5" href="<?php the_permalink() ?>">
+							<?php the_post_thumbnail('slideshow') ?>
+						</a>
+						<div class="caption col-md-7">
 							<h4><?php the_title() ?></h4>
 							<p><?php the_excerpt() ?></p>
 						</div>
-
-						<a href="<?php the_permalink() ?>">
-							<?php the_post_thumbnail('entradas_m') ?>
-						</a>
 					</div>
 				</div>
 			</div>

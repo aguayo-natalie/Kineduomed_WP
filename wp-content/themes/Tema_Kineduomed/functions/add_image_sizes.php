@@ -15,7 +15,9 @@ function dl_image_sizes( $sizes ) {
 		'slideshow'		=> __( 'Tamaño del slideshow' ),
 		'custom_logo'	=> __( 'Tamaño personalizado del logo' ),
 		'entradas_s'	=> __( 'Tamaño personalizado imagenes small entradas' ),
-		'entradas_m'	=> __( 'Tamaño personalizado imagenes medium entradas' )
+		'entradas_m'	=> __( 'Tamaño personalizado imagenes medium entradas' ),
+		'custom_equipo'	=> __( 'Tamaño personalizado imagenes equipo' ),
+		'empresas_logo'	=> __( 'Tamaño personalizado logos empresas' )
 		
 	);
 
@@ -38,7 +40,9 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_image_size( 'slideshow', 800, 600, true );			// Personalización del tamaño del slideshow
 	add_image_size( 'custom_logo', 800, 600, true );		// Personalización del tamaño del logo
 	add_image_size( 'entradas_s', 498, 304, true );			// Tamaño personalizado imagenes small entradas
-	add_image_size( 'entradas_m', 1000, 480, true );			// Tamaño personalizado imagenes medium entradas
+	add_image_size( 'entradas_m', 550, 336, true );			// Tamaño personalizado imagenes medium entradas
+	add_image_size( 'custom_equipo', 400, 400, true );		// Tamaño personalizado imagenes equipo
+	add_image_size( 'empresas_logo', 214, 125, true );		// Tamaño personalizado logos empresas
 	
 
 	add_filter( 'image_size_names_choose', 'dl_image_sizes' );

@@ -9,7 +9,7 @@
 			  	<p>En <strong>KINE</strong>DUOMED contamos con las siguientes empresas en convenio que desean entregar una mejor calidad de vida y mayor bienestar a sus trabajadores, aumentando la vitalidad y disminuyendo el ausentismo. Les ayudaremos a tomar decisiones inteligentes y saludables, además de reducir sus costos en salud.</p>
 
 			  	<div class="convenios_main__logos row">
-
+					
 
 			  		<?php
 						$convenios = array(
@@ -26,7 +26,7 @@
 					<div class="col-md-3">
 						<div class= "thumbnail">
 
-							<?php the_post_thumbnail() ?>
+							<?php the_post_thumbnail('empresas_logo') ?>
 
 						</div>
 					</div>		

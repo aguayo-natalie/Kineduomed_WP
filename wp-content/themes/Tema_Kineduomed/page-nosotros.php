@@ -33,7 +33,7 @@
 				?>
 
 				<div class="col-md-4">
-					<?php the_post_thumbnail() ?>
+					<?php the_post_thumbnail('custom_equipo') ?>
 		  			<h5><?php the_title() ?></h5>
 		  			<p><?php the_field('text') ?></p>
 		  		</div>

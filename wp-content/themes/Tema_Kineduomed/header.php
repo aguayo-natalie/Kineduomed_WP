@@ -49,7 +49,7 @@
 
 				      <div class="container">
 				          <ul class="nav nav-pills navbar-right">
-							 <li role="presentation" class="active"><a href="#"><i class="far fa-calendar-alt calendario"></i> AGENDA TU HORA</a></li>
+							 <li role="presentation" class="active"><a href="<?php bloginfo('url') ?>/agendar-hora/"><i class="far fa-calendar-alt calendario"></i> AGENDA TU HORA</a></li>
 						  </ul>
 					  </div>
 				    </div>
